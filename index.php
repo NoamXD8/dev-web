@@ -56,4 +56,19 @@ $num2 = 4;
 
 $num1 += 3;
 
+foreach($fruits as $key => $fruit){
+    switch($key){
+        case 'fruit1' :
+            echo 'Je suis une banane <br>';
+            break;
+        case 'fruit2' :
+            echo 'Je suis une orange <br>';
+            break;
+        default:
+            echo 'Je ne suis pas un fruit <br>';
+            break;
+    }
+}
+
+
 ?>
