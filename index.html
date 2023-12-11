@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <style>
-.body{
-    padding: 2%;
+body{
+    padding: 10px;
 }
 
 .footer{
@@ -29,6 +29,38 @@
     margin-right: 20px;
     cursor: pointer;
 }
+
+.input{
+    margin: 8px 6px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: lightgrey;
+    width: 90%;
+}
+
+.label{
+    margin: 8px 6px;
+}
+
+.container{
+    box-sizing : border-box;
+    border-radius:5px;
+    background-color:#f2f2f2;
+    padding:20px;
+    width: 100%;
+    /* redéfinition 400 + 2*20 */
+    max-width: 300px;
+    margin: 10px 0 10px 10px; /* Ajout de marges pour aligner à gauche */
+
+}
+
+
+/* Pour pas qu'il dépasse du container */
+textarea{
+    max-width: 90%;
+}
+
     </style>
 </head>
 <body>
@@ -36,78 +68,34 @@
         <h1 >Soirée Chateau De Mazouet</h1>
     </header>
 
-    <nav>
-        <a href="https://www.mariages.net/chateau-mariage/mazouet--e274563">Réservation du chateau</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.mariages.net/chateau-mariage/mazouet--e274563">Réservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/maps/place/Mazouet,+72500+Vaas/@47.6899628,0.3014092,83m/data=!3m1!1e3!4m6!3m5!1s0x47e2bf31892e4943:0x9455497de29ce947!8m2!3d47.6897372!4d0.2998657!16s%2Fg%2F1td29mct?entry=ttu">Localisation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.udpse.com/vins/190-chateau-mazouet/2015">Vin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        <a href="https://www.google.com/maps/place/Mazouet,+72500+Vaas/@47.6899628,0.3014092,83m/data=!3m1!1e3!4m6!3m5!1s0x47e2bf31892e4943:0x9455497de29ce947!8m2!3d47.6897372!4d0.2998657!16s%2Fg%2F1td29mct?entry=ttu">Localisation</a>
-
-    </nav>
+    
 <br>
 
     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21485.698509402082!2d0.26293860612000847!3d47.69000674236155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e2bf3167c61ca1%3A0xb37e23348e2c342e!2sMazouet%2C%2072500%20Vaas!5e0!3m2!1sfr!2sfr!4v1702304417662!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
-    <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">Nom</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Prénom</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label">Username</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">City</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
-          <div class="invalid-feedback">
-            Please provide a valid city.
-          </div>
-        </div>
-        
-        <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="validationCustom05" required>
-          <div class="invalid-feedback">
-            Please provide a valid zip.
-          </div>
-        </div>
-
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-      </form>
 <hr>
-    <section>
+    <section align="center">
         <h2>Livre Photo de la soirée du 9 décembre au château de Mazouet</h2>
 
         <!-- Responsive sur les images -->
@@ -123,6 +111,45 @@
         </div>
 
     </section>
+
+<h2>Formulaire de contact</h2>
+
+<section class="container">
+    <form name="contact" action="reponseAuto.php" method="POST" autocomplete="on">
+        <!-- Nom prénom -->
+        <label class="label" for="name">Nom et Prénom : </label><br>
+        <input type="text" id="name"  name="name"  class="input" placeholder="Entrez votre nom et prénom" required><br>
+
+        <!-- Email -->
+        <label class="label" for="email">Adresse Mail : </label><br>
+        <input type="email" id="email" name="email" class="input" placeholder="Entrez votre email" required><br>
+
+        <!-- Objet de la réclamation -->
+        <label class="label" for="objet">Objet de votre demande : </label><br>
+            <select list="objet" name="objet" id="objet" class="input" style="width: 96%;">
+                        <option align="center" value="">--Sélectionnez--</option>
+                        <option value="colispasrecu" name="colispasrecu">Je n'ai pas reçu mon colis</option>
+                        <option value="colisvide" name="colisvide">Mon colis était vide</option>
+                        <option value="mauvaismodel" name="mauvaismodel">J'ai recu le mauvais modèle de sneakers</option>
+                        <option value="wrongsize" name="wrongsize">Je n'ai pas reçu la bonne taille de sneakers</option>
+                        <option value="autres" name="autres">Autres</option>
+            </select>
+            <br>
+
+        <!-- Numéro de commande -->
+        <label class="label" for="n_commande">Numéro de commande : </label><br>
+        <input type="number" id="n_commande" name="n_commande" class="input" placeholder="Entrez votre numéro de commande"><br>
+
+        <!-- Commentaire -->
+        <label class="label" for="commentaire">Commentaire :</label><br>
+        <textarea id="commentaire" name="commentaire" class="input" rows="5" placeholder="Décrivez votre problème en quelques lignes"></textarea><br>
+
+        <!-- Envoyer -->
+        <button class="boutonform" type="submit" value="submit">Envoyer</button>
+        <button class="boutonform" type="reset" value="reset">Effacer</button>
+
+    </form>
+</section>
     
 
         <!-- Footer -->
