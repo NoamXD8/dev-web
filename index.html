@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5d94f6b61f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+.body{
+    padding: 2%;
+}
+
+.footer{
+    margin-top:50px ;
+    padding: 20px;
+    background-color: black;
+    color: lightgrey;
+    /*flex-wrap: wrap;    /*aligne les resaux et contacter*/
+    
+}
+
+.footer .contact{
+    display: flex;  /*aligne les icones */
+}
+
+.footer .contact p{
+    margin-right: 20px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header align="center">
+        <h1 >Soirée Chateau De Mazouet</h1>
+    </header>
+
+    <nav>
+        <a href="https://www.mariages.net/chateau-mariage/mazouet--e274563">Réservation du chateau</a>
+
+        <a href="https://www.google.com/maps/place/Mazouet,+72500+Vaas/@47.6899628,0.3014092,83m/data=!3m1!1e3!4m6!3m5!1s0x47e2bf31892e4943:0x9455497de29ce947!8m2!3d47.6897372!4d0.2998657!16s%2Fg%2F1td29mct?entry=ttu">Localisation</a>
+
+    </nav>
+<br>
+
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21485.698509402082!2d0.26293860612000847!3d47.69000674236155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e2bf3167c61ca1%3A0xb37e23348e2c342e!2sMazouet%2C%2072500%20Vaas!5e0!3m2!1sfr!2sfr!4v1702304417662!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Prénom</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+<hr>
+    <section>
+        <h2>Livre Photo de la soirée du 9 décembre au château de Mazouet</h2>
+
+        <!-- Responsive sur les images -->
+        <img src="assets/images/100_1386.JPG" class="img-fluid" width="24%" >
+        <img src="assets/images/100_1402.JPG" class="img-fluid" width="24%" >
+        <img src="assets/images/100_1414.JPG" class="img-fluid" width="24%" >
+        <img src="assets/images/100_1429.JPG" class="img-fluid" width="24%" >
+
+
+        <div align="center">
+            <video controls width="250" height="500">
+                <source src="assets/images/pnj.mp4" type="video/mp4"/>
+        </div>
+
+    </section>
+    
+
+        <!-- Footer -->
+    <footer class="footer">
+            <h4>Nous contacter</h4>
+            <div class="contact">
+                <p><i class="fa-brands fa-facebook fa-2x"></i></p>
+                <p><i class="fa-brands fa-twitter fa-2x"></i></p>
+                <p><i class="fa-solid fa-envelope fa-2x"></i></p>
+                <p><i class="fa-brands fa-instagram fa-2x"></i></p>
+            </div>
+            <!-- En savoir plus -->
+            <h4>En savoir plus</h4>
+            <a href="#">CGV</a><br>
+            <a href="#">CGU</a><br>
+            <a href="#">Conditions d'échanges et de retours</a><br>
+            <a href="#">Politique de confidentialité</a>
+           <br>
+    </footer>
+</body>
+</html>
